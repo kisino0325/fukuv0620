@@ -6,7 +6,7 @@ namespace fukuv0620
     public partial class Form1 : Form
     {
         Random random = new Random();
-        int count = 1;
+        int count;
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace fukuv0620
         private void button1_Click(object sender, EventArgs e)
         {
             Random random = new Random();
+            int count = this.count;
             int yosou;
             int answer = random.Next(51);
             MessageBox.Show($"{count}‰ñ–Ú‚Ì’§í");
